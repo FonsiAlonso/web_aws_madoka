@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff5fc;
+    color: #43263f;
+}
+
+header {
+    background: linear-gradient(135deg, #e9a7d2, #9c8bd6);
+    padding: 25px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 18px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: white;
+    color: #9c6ca0;
+}
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    background: radial-gradient(circle, #ffe8f7, #e7d9f8);
+}
+
+.hero section {
+    max-width: 700px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.boton,
+button {
+    display: inline-block;
+    border: none;
+    background: #a46bb5;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton:hover,
+button:hover {
+    background: #754580;
+    transform: translateY(-2px);
+}
+
+.contenido {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 25px;
+}
+
+.contenido h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 32px;
+}
+
+.personajes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 25px;
+}
+
+.tarjeta {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(100, 60, 100, 0.15);
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-7px);
+}
+
+.icono {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+    margin-bottom: 10px;
+}
+
+.tarjeta p,
+.historia p {
+    line-height: 1.7;
+}
+
+.historia {
+    max-width: 800px;
+}
+
+.historia p {
+    margin-bottom: 20px;
+}
+
+.aviso {
+    background: #f5d9ec;
+    padding: 20px;
+    border-left: 5px solid #a46bb5;
+    border-radius: 8px;
+    margin: 30px 0;
+}
+
+.oculto {
+    display: none;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.imagen {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    background: linear-gradient(135deg, #f7cce9, #d7c9f4);
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.imagen:hover {
+    transform: scale(1.03);
+}
+
+.imagen span {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #43263f;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+    }
+}
